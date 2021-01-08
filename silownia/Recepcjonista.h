@@ -21,7 +21,7 @@ public:
 	
 	void archiwizuj_potwierdzenia_przelewu(Karnet);
 
-	void dodaj_karnet(Karnet*, Klient);
+	void dodaj_karnet(&Karnet, &Klient);
 };
 
 #endif
