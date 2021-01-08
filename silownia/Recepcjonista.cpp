@@ -12,7 +12,7 @@ void Recepcjonista::archiwizuj_potwierdzenia_przelewu(Karnet k) {
 	cout<<"Karnet zostal wysłany do ksiegowosci"<<endl;
 }
 
-void Recepcjonista::dodaj_karnet(Karnet) {
-	
+void Recepcjonista::dodaj_karnet(Karnet* k1, Klient* k2) {
+	k2._unnamed_Karnet = k1;
 }
 
