@@ -14,10 +14,6 @@ private:
 	string _nazwisko;
 	int _iD;
 
-	
-
-public: 
-	void wglad_do_grafiku();
 };
 
 #endif
