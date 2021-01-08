@@ -7,24 +7,21 @@ using namespace std;
 
 #include "Karnet.h"
 #include "Pracownik.h"
+#include "Klient.h"
 
 class Karnet;
-// class Pracownik;
+class Pracownik;
 class Recepcjonista;
+class Klient;
 
 class Recepcjonista: public Pracownik
 {
-	private: klient _klient;
-	public: Recepcjonista* _unnamed_Recepcjonista_;
-	public: std::vector<Karnet*> _unnamed_Karnet_;
 
-	public: void stwórz_harmonogram();
+public: 
+	
+	void archiwizuj_potwierdzenia_przelewu(Karnet);
 
-	public: void modyfikuj_harmonogram();
-
-	public: void archiwizuj_potwierdzenia_przelewu();
-
-	public: void dodaj_karnet();
+	void dodaj_karnet(Karnet*, Klient);
 };
 
 #endif
