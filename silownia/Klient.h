@@ -10,12 +10,13 @@ using namespace std;
 #include "Wizyta_u_dietetyla.h"
 #include "Trening_personalny.h"
 #include "Grupa_zajêciowa.h"
+#include "Karnet.h"
 
 class Karta_zdrowia;
 class Wizyta_u_dietetyla;
 class Trening_personalny;
 class Grupa_zajeciowa;
-class Klient;
+class Karnet;
 
 class Klient
 {
@@ -29,9 +30,10 @@ private:
 	Karta_zdrowia* _unnamed_Karta_zdrowia_;
 	Wizyta_u_dietetyla* _unnamed_Wizyta_u_dietetyla_;
 	Trening_personalny* _unnamed_Trening_personalny_;
-	Grupa_zajeciowa*; _unnamed_Grupa_zajeciowa;
+	Grupa_zajeciowa* _unnamed_Grupa_zajeciowa;
+	Karnet* _unnamed_Karnet;
 
-public: void zapisz_do_grupy_zajeciowej();
+public: void zapisz_do_grupy_zajeciowej(*Grupa_zajeciowa);
 	void zapisz_do_dietetyka();
 	void zapisz_na_trening();
 
