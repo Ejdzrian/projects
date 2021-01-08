@@ -9,10 +9,10 @@ using namespace std;
 
 
 void Recepcjonista::archiwizuj_potwierdzenia_przelewu(Karnet k) {
-	cout<<k.
+	cout<<"Karnet zostal wysłany do ksiegowosci"<<endl;
 }
 
-void Recepcjonista::dodaj_karnet() {
-	throw "Not yet implemented";
+void Recepcjonista::dodaj_karnet(Karnet) {
+	
 }
 
