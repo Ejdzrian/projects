@@ -7,10 +7,10 @@ using namespace std;
 #include "Pracownik.h"
 #include "Klient.h"
 
-Recepcjonista::Recepcjonista() {
-	_imie = "Michal"; 
-	_nazwisko = "Kozien"; 
-	_iD = 001;
+Recepcjonista::Recepcjonista(string a, string b, int id) {
+	_imie = a; 
+	_nazwisko = b; 
+	_iD = id;
 }
 void Recepcjonista::archiwizuj_potwierdzenia_przelewu(Karnet k) {
 	cout<<"Karnet zostal wysłany do ksiegowosci"<<endl;
