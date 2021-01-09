@@ -1,13 +1,14 @@
 #include <exception>
 #include <string>
 #include <vector>
+#include<iostream>
 using namespace std;
 
 #ifndef __Trener_h__
 #define __Trener_h__
 
 #include "Karta_zdrowia.h"
-#include "Grupa_zajêciowa.h"
+#include "Grupa_zajeciowa.h"
 #include "Trening_personalny.h"
 #include "Pracownik.h"
 
@@ -20,14 +21,17 @@ class Trener;
 
 class Trener: public Pracownik
 {
-	
-	public: std::vector<Karta_zdrowia*> _unnamed_Karta_zdrowia_;
-	
-	public: std::vector<Grupa_zajêciowa*> _unnamed_Grupa_zajêciowa_;
-	
-	public: std::vector<Trening_personalny*> _unnamed_Trening_personalny_;
+private:
+	//int[70] _dostepnosc_godzinowa;
 
-	public: int[70] dostepnosc_godzinowa();//
+public: 
+	//std::vector<Karta_zdrowia*> _unnamed_Karta_zdrowia_;
+	
+	std::vector<Grupa_zajeciowa*> _unnamed_Grupa_zajeciowa_;
+	
+	std::vector<Trening_personalny*> _unnamed_Trening_personalny_;
+
+	void wglad_do_karty_zdrowia(Klient*);
 };
 
 #endif

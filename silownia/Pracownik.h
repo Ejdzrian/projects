@@ -9,13 +9,11 @@ class Pracownik;
 
 class Pracownik
 {
-	private: string _imie;
-	private: string _nazwisko;
-	private: int _iD;
+private: 
+	string _imie;
+	string _nazwisko;
+	int _iD;
 
-	public: void wgl¹d_w_karte_zdrowia_pacjenta();
-
-	public: void wglad_do_grafiku();
 };
 
 #endif

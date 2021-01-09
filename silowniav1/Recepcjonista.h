@@ -14,14 +14,21 @@ class Pracownik;
 class Recepcjonista;
 class Klient;
 
-class Recepcjonista: public Pracownik
+class Recepcjonista
 {
 
 public: 
-	
+
+	string _imie;
+	string _nazwisko;
+	int _iD;
+
+	Recepcjonista(string, string, int);
+		
 	void archiwizuj_potwierdzenia_przelewu(Karnet);
 
 	void dodaj_karnet(Karnet*, Klient*);
+
 };
 
 #endif
